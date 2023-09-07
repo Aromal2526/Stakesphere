@@ -30,13 +30,13 @@ const Works = () => {
     },
   ];
   return (
-    <div className="flex flex-col items-center mt-12 font-grotesk gap-3">
-      <p className="text-4xl font-medium">How Stakesphere Works</p>
-      <div className="bg-subview bg-cover md:h-60 grid grid-rows-5 md:grid-rows-1 md:grid-cols-5 place-items-center w-11/12 justify-around pt-2 ">
+    <div data-aos="flip-up" className="flex flex-col items-center mt-12 font-grotesk gap-3">
+      <p className="text-4xl font-medium text-center">How Stakesphere Works</p>
+      <div className="bg-subview bg-contain md:my-10 lg:my-0 md:h-60 grid grid-rows-5 md:grid-rows-1 md:grid-cols-5 place-items-center w-11/12 justify-around pt-2 ">
         {ImageArray.map((arr: image, index: number) => {
           return (
             <>
-                <div className="flex flex-col items-center justify-center gap-3 lg:w-64 text-center font-medium text-[18px]">
+                <div data-aos="flip-up" data-aos-delay={`${index === 0 ? 0 : index * 200}`} className="flex flex-col items-center justify-center gap-3 lg:w-64 text-center font-medium text-[18px]">
                   <p>{arr?.title}</p>
                   <img src={arr?.url} className="h-[86px] W-[86px]" />
                   <p>{arr?.name}</p>

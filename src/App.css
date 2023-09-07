@@ -5,11 +5,10 @@ box-sizing: border-box;
 color-scheme: light dark;
 overflow-x: hidden;
 }
-/* 
-* { 
+/* *{
     outline: 1px solid red;
     outline-offset: -1px;
-  } */
+  }  */
 
 .box {
     position: relative;

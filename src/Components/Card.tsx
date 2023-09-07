@@ -5,8 +5,8 @@ const Card = (props:any) => {
     console.log(id===card,'cardsssss',id,card);
     
   return (
-    <div className={` ${id===card ? '':'blur hover:blur-lg'} duration-300 flex flex-col px-3 py-5 items-center lg:w-[348px] lg:h-[424px] gap-5 box`}>
-         <img src={url}/>
+    <div  className={` ${id===card ? '':'md:blur md:hover:blur-lg'} duration-300 flex flex-col px-3 py-5 items-center w-full  gap-5 box`}>
+         <img src={url} className='w-[89px] h-[89px]'/>
          <h3>{title}</h3>
          <p className='text-center font-light text-[14px]'>{desc}</p>
          <div className='flex'>
@@ -22,8 +22,8 @@ const Card = (props:any) => {
             </div>
          </div>
          <div className='flex gap-2'>
-            <Button height='py-[12px]' width='px-[30px] rounded-[39px]' textColor='bg-primary font-grotesk text-[10px] font-bold text-white' text='LEARN MORE'/>
-            <Button height='py-[12px]' width='px-[30px] rounded-[39px]' textColor='bg-secondary font-grotesk text-[10px] font-bold text-black' text='STAKE NOW'/>
+            <Button height='py-[12px]' width='px-[15px] md:px-[30px] rounded-[39px]' textColor='bg-primary font-grotesk text-[10px] font-bold text-white' text='LEARN MORE'/>
+            <Button height='py-[12px]' width='px-[15px] md:px-[30px] rounded-[39px]' textColor='bg-secondary font-grotesk text-[10px] font-bold text-black' text='STAKE NOW'/>
          </div>
         </div>
   )

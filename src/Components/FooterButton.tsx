@@ -8,7 +8,7 @@ const FooterButton = (props:any) => {
       </div>:
       <img src={url}/>
       }
-        <div className="flex flex-col justify-around text-primary font-grotesk tracking-[1.11px]">
+        <div className="flex flex-col justify-around  items-start text-primary font-grotesk tracking-[1.11px]">
             <p className="font-bold text-xl">{head}</p>
             <p className="font-normal text-[15px] leading-[23.14px]">{subHead}</p>
         </div>
