@@ -34,7 +34,7 @@ const BLogs = () => {
     <div className="flex  flex-col items-center mt-12 font-grotesk gap-3 p-10 md:p-0 ">
       <p className="font-medium text-4xl">Blogs</p>
 
-      <div className="md:grid  md:grid-cols-2 md:grid-rows-5 xl:gap-[20%] gap-4 md:px-10 ">
+      <div className="md:grid  md:grid-cols-2 md:grid-rows-5 xl:gap-20 gap-4 md:px-10 ">
       <p className="font-medium text-4xl col-span-2 row-span-1 justify-self-start place-self-center h-10">Latest</p>
 
 
