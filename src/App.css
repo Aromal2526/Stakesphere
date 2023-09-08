@@ -2,13 +2,16 @@ html body{
 margin: 0;
 padding: 0;
 box-sizing: border-box;
-color-scheme: light dark;
+color-scheme: light ;
 overflow-x: hidden;
+-webkit-tap-highlight-color: transparent;
 }
-/* *{
-    outline: 1px solid red;
-    outline-offset: -1px;
-  }  */
+*{
+  /* overflow-x: hidden;
+  overflow-y: hidden; */
+    /* outline: 1px solid red;
+    outline-offset: -1px; */
+  } 
 
 .box {
     position: relative;

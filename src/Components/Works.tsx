@@ -30,7 +30,7 @@ const Works = () => {
     },
   ];
   return (
-    <div data-aos="flip-up" className="flex flex-col items-center mt-12 font-grotesk gap-3">
+    <div  className="flex flex-col items-center mt-12 font-grotesk gap-3">
       <p className="text-4xl font-medium text-center">How Stakesphere Works</p>
       <div className="bg-subview bg-contain md:my-10 lg:my-0 md:h-60 grid grid-rows-5 md:grid-rows-1 md:grid-cols-5 place-items-center w-11/12 justify-around pt-2 ">
         {ImageArray.map((arr: image, index: number) => {

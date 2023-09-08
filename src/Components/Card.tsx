@@ -5,8 +5,8 @@ const Card = (props:any) => {
     console.log(id===card,'cardsssss',id,card);
     
   return (
-    <div  className={` ${id===card ? '':'md:blur md:hover:blur-lg'} duration-300 flex flex-col px-3 py-5 items-center w-full  gap-5 box`}>
-         <img src={url} className='w-[89px] h-[89px]'/>
+    <div    className={` ${id===card ? '':'md:blur md:hover:blur-lg'} duration-300 flex flex-col px-3 py-5 items-center w-full  gap-5 box`}>
+         <img data-aos="flip-right" src={url} className='w-[89px] h-[89px]'/>
          <h3>{title}</h3>
          <p className='text-center font-light text-[14px]'>{desc}</p>
          <div className='flex'>

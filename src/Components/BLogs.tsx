@@ -31,7 +31,7 @@ const BLogs = () => {
     },
   ];
   return (
-    <div className="flex  flex-col items-center mt-12 font-grotesk gap-3 p-10 md:p-0 ">
+    <div id="Blog" className="flex  flex-col items-center mt-12 font-grotesk gap-3 p-10 md:p-0 ">
       <p className="font-medium text-4xl">Blogs</p>
 
       <div className="md:grid  md:grid-cols-2 md:grid-rows-5 xl:gap-20 gap-4 md:px-10 ">
@@ -54,7 +54,6 @@ const BLogs = () => {
 
       {blogContent?.map((node: content,index:number) => {
           return (
-            <div data-aos="flip-up" data-aos-delay={`${index === 0 ? 0 : index * 300}`}>
             <BlogCards
             index={index}
               desc={node?.desc}
@@ -63,7 +62,6 @@ const BLogs = () => {
               url={node?.url}
               date={node?.date}
             />
-            </div>
           );
         })}
 

@@ -24,7 +24,7 @@ const Community = () => {
         Learn more about Lido, chat with us and have your say in the future of
         the stakesphere ecosystem
       </p>
-      <img src={footerPic} className=" w-full h-auto md:w-[881.64px] md:h-[269px] mt-16 " />
+      <img data-aos="zoom-out" src={footerPic} className=" w-full h-auto md:w-[881.64px] md:h-[269px] mt-16 " />
       <div className=" grid md:grid md:grid-cols-2 md:grid-rows-2 gap-x-16 gap-y-10 mt-20">
         {
           contactUs.map((node:contact,index:number)=>{

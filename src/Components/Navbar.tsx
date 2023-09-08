@@ -7,8 +7,14 @@ const Navbar = () => {
 
     const navItems:string[]=['Tokens','Blog','About','Contact']
     const [showNav,setShowNav]=useState<boolean>(false)
+const scrollIntoViewPort =(id:string)=>{
+  setShowNav(false)
+  let elementToView=document.getElementById(id)
+  elementToView?.scrollIntoView({behavior:"smooth"})
+}
+
   return (
-    <nav className="  md:h-20  flex justify-between w-screen items-center font-grotesk font-bold">
+    <nav className="  md:h-20 cursor-pointer flex justify-between w-screen items-center font-grotesk font-bold">
     <div className="bg-secondary py-3 md:py-6 lg:px-6 px-3  flex rounded-br-[21px]  ">
           <img src={logoName}  className=' md:h-[40px] md:w-[246px] w-[220px] h-[40px]'/>
    </div>
@@ -25,17 +31,17 @@ const Navbar = () => {
 </svg>
    <div className=' hidden md:flex text-secondary lg:gap-10 gap-8  '>
    {navItems.map((items:string)=>{ 
-    return <p>{items}</p>
+    return <p onClick={()=>scrollIntoViewPort(items)}>{items}</p>
    })}
    </div>
    <div className='w-[20%] hidden md:block'>
 <Button height='pt-[13px] pb-[14px]' width='pr-[34px] pl-[33px] rounded-[43px] lg:tracking-[1.11px] lg:leading-[23.14px]' bgColor='bg-secondary' textColor='text-[#0047FF] lg:text-[10px] text-[9px]' text='CONNECT WALLET'/>
    </div>
 
-   {showNav&& <div className='fixed top-[64px] right-8 flex flex-col justify-around text-primary font-grotesk text-base rounded-[10px] bg-secondary  w-[30%] p-5'>
+   {showNav&& <div className='fixed md:hidden top-[64px] right-8 flex flex-col justify-around text-primary font-grotesk text-base rounded-[10px] bg-secondary  w-[30%] p-5'>
     {navItems?.map((node:string)=>{
       return(
-<span className='p-2 w-[90%] border-b border-primary font-bold'>{node}</span>
+<div onClick={()=>scrollIntoViewPort(node)} className='p-2 w-[90%] border-b border-primary font-bold'>{node}</div>
         
       )
     })}
