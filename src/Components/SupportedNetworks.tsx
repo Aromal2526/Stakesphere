@@ -56,7 +56,7 @@ const handleSlideChange=(direction:string)=>{
 </svg>
           <div className='w-[70%] '>
           {
-            displaycards.filter((cards:any,index:number)=>{
+            displaycards.filter((index:number)=>{
                 return index===currentCard   
             }).map((cards:any)=>{
               console.log("cardgggss",cards)
