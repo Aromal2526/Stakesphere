@@ -62,12 +62,11 @@ const scrollIntoViewPort =(id:string)=>{
 {node}
     </a></div>}
 
-
         </>
         
       )
     })}
-    <Button width='px-[22px]' height=' py-[8px] ' textColor='text-xs font-bold mt-5 font-grotesk rounded-[28px] bg-primary text-secondary' text='Connect Wallet'/>
+    <Button width='px-[22px]' height=' py-[8px] ' textColor='text-xs font-bold mt-5 font-grotesk rounded-[28px] bg-primary text-secondary' text='Connect Wallet' />
 
    </div>}
     </nav>

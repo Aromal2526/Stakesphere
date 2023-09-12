@@ -3,9 +3,11 @@ import sphere1 from "../assets/sphere.png";
 import sphere2 from "../assets/sphere (1).png"
 import mobImage from "../assets/mobAbtImage.png"
 
+
+
 const AboutUs = () => {
   return (
-    <div id="About" className="flex flex-col items-center md:items-start md:flex-row mt-[5%] justify-between relative overflow-x-hidden ">
+    <div id="About" className="flex flex-col items-center bg-blogsBg md:items-start md:flex-row mt-[5%] justify-between relative overflow-x-hidden ">
       <div className="mt-[8%] flex flex-col font-grotesk lg:px-[10%] xl:px-[12%] md:text-left text-center px-[5%] gap-3 md:w-[50%]">
         <p className="font-medium text-4xl">Why Stake with Filecoin?</p>
         <p className="font-normal lg:text-xl text-base text-left">

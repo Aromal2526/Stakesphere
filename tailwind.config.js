@@ -19,7 +19,8 @@ export default {
         view:"url('src/assets/BackgroundImage.png')",
         subview:"url(src/assets/secondaryImage.png)",
         aboutUs:"url(src/assets/main.png)",
-        footer:"url(src/assets/background.svg)"
+        footer:"url(src/assets/background.svg)",
+        blogsBg:"url(src/assets/Group3.png)"
       },
 
     },

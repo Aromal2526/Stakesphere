@@ -5,7 +5,7 @@ const Card = (props:any) => {
     console.log(id===card,'cardsssss',id,card);
     
   return (
-    <div    className={` ${id===2 ? '':'md:blur'} duration-300 flex flex-col  pt-5 items-center w-full  gap-5 box`}>
+    <div    className={` ${id!==2 ? 'pointer-events-none md:blur':''}  duration-300 flex flex-col  pt-5 items-center w-full  gap-5 box`}>
          <img data-aos="flip-right" src={url} className='w-[89px] h-[89px]'/>
          <h3>{title}</h3>
          <p className='text-center font-light text-[14px] w-[60%]'>{desc}</p>
@@ -22,8 +22,8 @@ const Card = (props:any) => {
             </div>
          </div>
          <div className='flex gap-2'>
-            <Button height='py-[12px]' width='px-[15px] md:px-[30px] rounded-[39px]' textColor='bg-primary font-grotesk text-[10px] font-bold text-white' text='LEARN MORE'/>
-            <Button height='py-[12px]' width='px-[15px] md:px-[30px] rounded-[39px]' textColor='bg-secondary font-grotesk text-[10px] font-bold text-black' text='STAKE NOW'/>
+            <Button height='py-[12px]' width='z-50 relative px-[15px] md:px-[30px] rounded-[39px]' textColor='bg-primary font-grotesk text-[10px] font-bold text-white' text='LEARN MORE'/>
+            <Button height='py-[12px]' width='px-[15px] z-50 relative md:px-[30px] rounded-[39px]' textColor='bg-secondary font-grotesk text-[10px] font-bold text-black' text='STAKE NOW'/>
          </div>
         </div>
   )

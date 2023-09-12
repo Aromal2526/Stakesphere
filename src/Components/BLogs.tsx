@@ -1,5 +1,9 @@
 import BlogCards from "./BlogCards";
 import newCard from '../assets/new.png'
+import card1 from '../assets/card1.png'                
+import card2 from '../assets/card2.png'                
+import card3 from '../assets/card3.png'                
+import card4 from '../assets/card4.png'                
 
 const BLogs = () => {
   interface content {
@@ -10,28 +14,28 @@ const BLogs = () => {
 
   const blogContent: content[] = [
     {
-      url: newCard,
+      url: card1,
       desc: "Stakesphere Announces Support for ETH Staking soon",
       date: " STAKESPHERE AUG 12, 2023",
     },
     {
-      url: newCard,
+      url: card2,
       desc: "Stakesphere Announces Support for ICP Staking soon.",
       date: "STAKESPHERE AUG 1, 2023",
     },
     {
-      url: newCard,
+      url: card3,
       desc: "Stakesphere Announces Support for MATIC Staking soon",
       date: "STAKESPHERE JUL 4, 2023",
     },
     {
-      url: newCard,
+      url: card4,
       desc: "Stakesphere Announces Support for SOL Staking soon",
       date: "STAKESPHERE JUN 22, 2023",
     },
   ];
   return (
-    <div id="Blog" className="flex  flex-col items-center mt-12 font-grotesk gap-3 p-10 md:p-0 ">
+    <div id="Blog" className="flex bg-blogsBg  flex-col items-center mt-12 font-grotesk gap-3 p-10 md:p-0 ">
       <div className="md:grid  md:grid-cols-2 md:grid-rows-5 xl:gap-20 gap-4 md:px-10 ">
   <div className="flex border-b  border-[#0047FF] md:pb-20 flex-col md:flex-row items-center gap-[10%] col-span-2 row-span-2 ">
         <img  data-aos="flip-up" src={newCard} className="w-full h-auto md:h-[285px] md:w-[452px]" />
@@ -53,7 +57,7 @@ staking your FIL tokens.
             <BlogCards
             index={index}
               desc={node?.desc}
-              height="h-auto md:h-[186px] "
+              height="h-auto md:h-[186px] object-cover "
               width=" w-full md:w-[180px]"
               url={node?.url}
               date={node?.date}

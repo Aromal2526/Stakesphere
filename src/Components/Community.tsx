@@ -10,7 +10,7 @@ const Community = () => {
   }
   const contactUs: contact[] = [
     { url: twitter, head: "Twitter", subHead: "FOLLOW @shakespere" },
-    { url: mail, head: "Contact Us", subHead: "FOLLOW @shakespere" },
+    { url: mail, head: "Contact Us", subHead: "info@stakeshere.io" },
   ];
 
   return (
