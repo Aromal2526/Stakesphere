@@ -6,7 +6,7 @@ import Navbar from "./Navbar"
 
 const MainView = () => {
   return (
-    <div className='bg-view  bg-no-repeat bg-cover flex flex-col  bg-center  items-center bg-primary w-screen h-max'>
+    <div className='bg-view  bg-no-repeat bg-cover flex flex-col  bg-center  items-center bg-primary w-full h-max'>
       <Navbar/>
     
  <div className="  mt-[11%] md:grid md:grid-cols-3 md:place-items-center w-[90%] justify-between hidden">

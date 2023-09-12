@@ -29,9 +29,9 @@ const handleSlideChange=(direction:string)=>{
 }
 
     const displaycards:any=[
-        {id:1,url:etherium ,title:'Ethereum',desc:'Stake any amount of ETH, get daily staking rewards and use your stETH across the DeFi ecosystem and L2.',perc:'4.0%',price:'14,662,312,501',month:'APR'},
-        {id:2,url:coin ,title:'File Coin',desc:'Stake any amount of ETH, get daily staking rewards and use your stETH across the DeFi ecosystem and L2.',perc:'4.0%',price:'14,662,312,501',month:'APR'},
-        {id:3,url:polygon ,title:'Polygon',desc:'Stake any amount of ETH, get daily staking rewards and use your stETH across the DeFi ecosystem and L2.',perc:'4.0%',price:'14,662,312,501',month:'APR'}
+        {id:1,url:etherium ,title:'Ethereum',desc:'Stake any amount of ETH, get daily staking rewards and use your stETH across the DeFi ecosystem and L2.',perc:'10%-18%',price:'2,662,312,501',month:'APR'},
+        {id:2,url:coin ,title:'File Coin',desc:'Stake any amount of ETH, get daily staking rewards and use your stETH across the DeFi ecosystem and L2.',perc:'10%-18%',price:'2,662,312,501',month:'APR'},
+        {id:3,url:polygon ,title:'Polygon',desc:'Stake any amount of ETH, get daily staking rewards and use your stETH across the DeFi ecosystem and L2.',perc:'10%-18%',price:'2,662,312,501',month:'APR'}
     ]
 
     const [card,setCard]=useState<number>(2)

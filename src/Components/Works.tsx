@@ -13,20 +13,20 @@ const Works = () => {
     {
       title: "Step 1",
       url: stack,
-      name: "Stake",
-      desc: "Stake any amount of your tokens to access daily staking rewards",
+      name: "Earn Passive Rewards",
+      desc: "By staking your FIL tokens, you'll be rewarded with additional FIL tokens for supporting the network",
     },
     {
       title: "Step 2",
       url: token,
-      name: "Receive stToken",
-      desc: "Stake any amount of your tokens to access daily staking rewards",
+      name: "Network Security",
+      desc: "Staking enhances the security of the Filecoin network, making it more resilient against potential attacks",
     },
     {
       title: "Step 3",
       url: block,
-      name: "Use in DeFi",
-      desc: "Stake any amount of your tokens to access daily staking rewards",
+      name: "Start Earning Rewards",
+      desc: "Once you've staked your FIL tokens, you'll automatically start earning staking rewards, which are typically distributed at regular intervals.",
     },
   ];
   return (

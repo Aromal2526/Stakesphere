@@ -7,12 +7,13 @@ const AboutUs = () => {
   return (
     <div id="About" className="flex flex-col items-center md:items-start md:flex-row mt-[5%] justify-between relative overflow-x-hidden ">
       <div className="mt-[8%] flex flex-col font-grotesk lg:px-[10%] xl:px-[12%] md:text-left text-center px-[5%] gap-3 md:w-[50%]">
-        <p className="font-medium text-4xl">About Us</p>
+        <p className="font-medium text-4xl">Why Stake with Filecoin?</p>
         <p className="font-normal lg:text-xl text-base text-left">
-          stakefish has been operating validators from 2018. We are one of the
-          largest and trusted validators in the crypto ecosystem. We support 20+
-          protocols and help stake over $1 billion worth of assets for both
-          institutions and retail investors.
+        Staking your FIL tokens is a way to actively participate in securing and maintaining
+the Filecoin network. As a staker, you help to validate transactions and ensure the integrity
+of the network while earning rewards for your contributions. Staking is not only financially
+rewarding but also reinforces the decentralized nature of Filecoin by involving token holders
+in the consensus process
         </p>
       </div>
       <img data-aos="zoom-in-up" src={mobImage} alt="Mobile About Us Image" className="w-full h-auto md:hidden"/>

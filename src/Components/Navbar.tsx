@@ -2,10 +2,11 @@
 import { useState } from 'react'
 import logoName from '../assets/Group 13.png'
 import Button from './Button'
+import pdfFile from '../assets/stake.pdf'
 const Navbar = () => {
   
 
-    const navItems:string[]=['Tokens','Blog','About','Contact']
+    const navItems:string[]=['Tokens','Blog','About','Contact','Whitepaper']
     const [showNav,setShowNav]=useState<boolean>(false)
 const scrollIntoViewPort =(id:string)=>{
   setShowNav(false)
@@ -15,8 +16,8 @@ const scrollIntoViewPort =(id:string)=>{
 
   return (
     <nav className="  md:h-20 cursor-pointer flex justify-between w-screen items-center font-grotesk font-bold">
-    <div className="bg-secondary py-3 md:py-6 lg:px-6 px-3  flex rounded-br-[21px]  ">
-          <img src={logoName}  className=' md:h-[40px] md:w-[246px] w-[220px] h-[40px]'/>
+    <div className="bg-secondary py-2 md:py-6 lg:px-6 px-3  flex rounded-br-[21px]  ">
+          <img src={logoName}  className=' md:h-[30px] md:w-[240px] w-[220px] h-[40px]'/>
    </div>
 
    <svg className='mx-4 md:hidden' width="30" height="30"  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" onClick={()=> setShowNav(!showNav)}>
@@ -29,19 +30,40 @@ const scrollIntoViewPort =(id:string)=>{
 </clipPath>
 </defs>
 </svg>
-   <div className=' hidden md:flex text-secondary lg:gap-10 gap-8  '>
+   <div className=' hidden md:flex text-secondary lg:gap-10 gap-4 lg:text-sm   text-[10px]  '>
    {navItems.map((items:string)=>{ 
-    return <p onClick={()=>scrollIntoViewPort(items)}>{items}</p>
+    return(
+      <>
+      {items==="Whitepaper"? <a href={pdfFile} rel="noreferrer" target='_blank'>
+      {items}
+    </a>:
+    <p onClick={()=>{scrollIntoViewPort(items)}}>
+      {items}
+
+    </p>
+    }
+      
+      </>
+    )
    })}
    </div>
    <div className='w-[20%] hidden md:block'>
-<Button height='pt-[13px] pb-[14px]' width='pr-[34px] pl-[33px] rounded-[43px] lg:tracking-[1.11px] lg:leading-[23.14px]' bgColor='bg-secondary' textColor='text-[#0047FF] lg:text-[10px] text-[9px]' text='CONNECT WALLET'/>
+<Button height='pt-[10px] pb-[10px]' width='pr-[30px] pl-[30px] rounded-[43px] lg:tracking-[1.11px] lg:leading-[23.14px]' bgColor='bg-secondary' textColor='text-[#0047FF] lg:text-[10px] text-[8px]' text='CONNECT WALLET'/>
    </div>
 
-   {showNav&& <div className='fixed md:hidden top-[64px] right-8 flex flex-col justify-around text-primary font-grotesk text-base rounded-[10px] bg-secondary  w-[30%] p-5'>
+   {showNav&& <div className='fixed md:hidden top-[64px] right-8 flex flex-col justify-around text-primary font-grotesk text-base rounded-[10px] bg-secondary  w-[40%] p-5'>
     {navItems?.map((node:string)=>{
       return(
-<div onClick={()=>scrollIntoViewPort(node)} className='p-2 w-[90%] border-b border-primary font-bold'>{node}</div>
+        <>
+        {node!=='Whitepaper'?
+<div onClick={()=>scrollIntoViewPort(node)} className='p-2 w-[90%] border-b border-primary font-bold'>{node}</div>:
+<div className='p-2 w-[90%] border-b border-primary font-bold'>
+<a href={pdfFile} rel="noreferrer" target='_blank'>
+{node}
+    </a></div>}
+
+
+        </>
         
       )
     })}
